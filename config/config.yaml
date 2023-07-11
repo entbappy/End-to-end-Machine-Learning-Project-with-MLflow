@@ -15,3 +15,19 @@ data_validation:
   STATUS_FILE: artifacts/data_validation/status.txt
 
 
+
+data_transformation:
+  root_dir: artifacts/data_transformation
+  data_path: artifacts/data_ingestion/winequality-red.csv
+
+
+
+model_trainer:
+  root_dir: artifacts/model_trainer
+  train_data_path: artifacts/data_transformation/train.csv
+  test_data_path: artifacts/data_transformation/test.csv
+  model_name: model.joblib
+
+
+
+
